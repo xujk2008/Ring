@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kitexu.ring"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity 
+            android:name="com.kitexu.client.Splash" 
+            android:theme="@style/AppTheme">
+            "
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+
+        <activity android:name="com.kitexu.client.Login"/>
+        
+        <activity android:name="com.kitexu.client.MainActivity"/>
+        
+        <activity android:name="com.kitexu.client.SignIn"
+            android:windowSoftInputMode="stateVisible"/>"
+            "
+        
+    </application>
+
+</manifest>

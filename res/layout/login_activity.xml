@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_signin_background"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/locator"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/loginCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bg_circle" />
+
+
+    <RelativeLayout
+        android:id="@+id/userLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/locator"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@id/loginCircle"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:id="@+id/userNameImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user" />
+
+
+        <EditText
+            android:id="@+id/userNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:ems="6"
+            android:textColorHint="#000000"
+            android:hint="邮箱/用户名"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginPasswordLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/userLayout"
+        android:layout_below="@id/userLayout"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/passwordImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:id="@+id/loginPasswordEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:ems="6"
+            android:textColorHint="#000000"
+            android:hint="登录密码"
+            android:password="true"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/userLayout"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/signinImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signin" 
+            android:layout_marginTop="58dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/loginImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login" />
+    </FrameLayout>
+
+"
+</RelativeLayout>

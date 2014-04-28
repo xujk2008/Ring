@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/login_signin_background">
+    
+    <LinearLayout
+        android:id="@+id/genderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/input">
+        
+        <ImageView 
+            android:id="@+id/maleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/male"/>
+        
+        <ImageView 
+            android:id="@+id/femaleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/femaletxt"/>
+        
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderLayout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input"
+    	android:layout_alignLeft="@id/genderLayout"
+    	android:layout_alignRight="@id/genderLayout"
+    	android:inputType="textEmailAddress"
+    	android:paddingLeft="10dp"
+    	android:hint="常用邮箱"
+    	android:singleLine="true"/>
+    
+    <EditText
+        android:id="@+id/signinPasswordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEdit"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input"
+    	android:layout_alignLeft="@id/genderLayout"
+    	android:layout_alignRight="@id/genderLayout"
+    	android:inputType="textPassword"
+    	android:paddingLeft="10dp"
+    	android:hint="密码"
+    	android:singleLine="true"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/signinPasswordEdit"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        
+        <ImageView 
+            android:id="@+id/signinBackImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"/>
+        <ImageView
+            android:id="@+id/signinSubmitImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/submit"/>"
+        
+    </LinearLayout>"
+    
+</RelativeLayout>
