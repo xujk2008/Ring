@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:orientation="horizontal"
-        android:background="@drawable/input">
+        android:background="@drawable/signin_input">
         
         <ImageView 
             android:id="@+id/maleImage"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/genderLayout"
         android:layout_marginTop="20dp"
-        android:background="@drawable/input"
+        android:background="@drawable/signin_input"
     	android:layout_alignLeft="@id/genderLayout"
     	android:layout_alignRight="@id/genderLayout"
     	android:inputType="textEmailAddress"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/emailEdit"
         android:layout_marginTop="20dp"
-        android:background="@drawable/input"
+        android:background="@drawable/signin_input"
     	android:layout_alignLeft="@id/genderLayout"
     	android:layout_alignRight="@id/genderLayout"
     	android:inputType="textPassword"
@@ -68,7 +68,7 @@
             android:id="@+id/signinBackImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"/>
+            android:src="@drawable/sign_in_back"/>
         <ImageView
             android:id="@+id/signinSubmitImage"
             android:layout_width="wrap_content"

@@ -27,6 +27,26 @@ public class Login extends Activity{
 		loginImage = (ImageView)findViewById(R.id.loginImage);
 		signinImage = (ImageView)findViewById(R.id.signinImage);
 		
+		//change the focus, avoid showing the keyboard automatically
+		loginImage.setFocusable(true);
+		loginImage.setFocusableInTouchMode(true);
+		loginImage.requestFocus();
+		loginImage.requestFocusFromTouch();
+		
+		loginImage.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+				Intent intent = new Intent();
+				intent.setClass(Login.this, PagerActivity.class);
+				
+				Login.this.startActivity(intent);
+			}
+			
+		});
+		
 		signinImage.setOnClickListener(new OnClickListener(){
 
 			@Override

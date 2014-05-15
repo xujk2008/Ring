@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="5dp">
+    
+    <TextView
+        android:id="@+id/femaleMoodTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textColor="#e66c69"
+        android:text="05:23"/>
+    
+    <TextView
+        android:id="@+id/femaleMoodDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:textColor="#e66c69"
+        android:layout_below="@id/femaleMoodTimeText"
+        android:text="2013-04-22"/>
+    
+    <LinearLayout
+        android:id="@+id/femaleMoodContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/femaleMoodDateText"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/femaleMoodFaceImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/happy_1" />
+        
+        <TextView
+            android:id="@+id/femaleMoodWordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:text="喝了两碗豆腐脑，一碗甜，一碗咸。"
+            android:textColor="#e66c69"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/femaleMoodContentLayout"
+        android:layout_marginTop="10dp"
+        android:background="#e66c69" />
+    
+</RelativeLayout>

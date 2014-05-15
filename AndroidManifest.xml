@@ -5,7 +5,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="17" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,7 @@
         <activity 
             android:name="com.kitexu.client.Splash" 
             android:theme="@style/AppTheme">
-            "
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,14 +25,17 @@
             
         </activity>
 
-        <activity android:name="com.kitexu.client.Login"/>
-        
-        <activity android:name="com.kitexu.client.MainActivity"/>
+        <activity android:name="com.kitexu.client.Login"
+            android:windowSoftInputMode="adjustResize"/>
         
         <activity android:name="com.kitexu.client.SignIn"
-            android:windowSoftInputMode="stateVisible"/>"
-            "
+            android:windowSoftInputMode="stateVisible"/>
         
-    </application>
+        <activity android:name="com.kitexu.client.PagerActivity"/>
+        
+        <activity android:name="com.kitexu.client.WordActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        </application>
 
 </manifest>
